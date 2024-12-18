@@ -86,7 +86,29 @@
   {
     "Component": "CCX",
     "Description": "Profile for xUSL CCX components",
-    "Tests" : []
+    "Tests" : [
+      {
+        "Name"        : "CcxEnableSmeeUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\CCX\\Common\\CcxEnableSmeeUt\\CcxEnableSmeeUt.json",
+        "Iterations"  : ["SmeeEnableTest", "SmeeEnableFalse"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\CCX\\Common\\CcxMiscInit.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "CcxSetCacWeightsUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\CCX\\Common\\CcxSetCacWeightsUt\\CcxSetCacWeightsUt.json",
+        "Iterations"  : ["CacWeightsSize15", "CacWeightsSize23"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\CCX\\Common\\CcxMiscInit.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "CcxGetCacWeightsUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\CCX\\Common\\CcxGetCacWeightsUt\\CcxGetCacWeightsUt.json",
+        "Iterations"  : ["GetCacWeightsAborted", "GetCacWeightsPass"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\CCX\\Common\\CcxMiscInit.c",
+        "Timeout"     : 15
+      }
+    ]
   },
   {
     "Component": "DF",
