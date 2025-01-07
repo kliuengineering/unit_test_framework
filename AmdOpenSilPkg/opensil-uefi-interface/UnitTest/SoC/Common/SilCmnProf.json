@@ -113,6 +113,21 @@
   {
     "Component": "DF",
     "Description": "Profile for xUSL DF components",
-    "Tests" : []
-  }
+    "Tests" : [
+      {
+        "Name"        : "DfHasFchUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\DF\\Common\\DfHasFchUt\\DfHasFchUt.json",
+        "Iterations"  : ["GetCommon2RevXferTablePass"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\DF\\Common\\BaseFabricTopologyCmn.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "DfGetSystemInfoUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\DF\\Common\\DfGetSystemInfoUt\\DfGetSystemInfoUt.json",
+        "Iterations"  : ["EmptyComponentLocation", "InvalidComponentType", "NoMatchingComponent", "ValidSmuScenario", "NoTransferTable"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\DF\\Common\\BaseFabricTopologyCmn.c",
+        "Timeout"     : 15
+      }
+    ]
+  } 
 ]

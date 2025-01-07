@@ -1,0 +1,6 @@
+[
+  {
+    "Description": "Tests the pass-case of transfer-table getter using mock from 'Library'.",
+    "Iteration": "GetCommon2RevXferTablePass"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Description": "Tests the failure of component location being empty.",
+    "Iteration": "EmptyComponentLocation"
+  },
+  {
+    "Description": "Tests the failure of invalid component.",
+    "Iteration": "InvalidComponentType"
+  },
+  {
+    "Description": "Tests the failure of correct data but no matching component.",
+    "Iteration": "NoMatchingComponent"
+  },
+  {
+    "Description": "Tests the pass-case of Smu being called.",
+    "Iteration": "ValidSmuScenario"
+  },
+  {
+    "Description": "Tests the failure of lacking transfer-table.",
+    "Iteration": "NoTransferTable"
+  }
+]
