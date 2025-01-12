@@ -1,15 +1,15 @@
 # Copyright (C) 2021 - 2024 Advanced Micro Devices, Inc. All rights reserved.
 # SPDX-License-Identifier: MIT
 #
-# @file  DfGetSystemInfoUt.inf
+# @file  DfHasSmuUt.inf
 # @brief
 #
 
 
 [Defines]
   INF_VERSION    = 0x00010005
-  BASE_NAME      = DfGetSystemInfoUt
-  FILE_GUID      = 06b8964e-2e9f-4ea6-b2c7-7b4db262ed0f
+  BASE_NAME      = DfHasSmuUt
+  FILE_GUID      = 7139b893-6fbf-4966-a0ce-aeed6ebb134e
   MODULE_TYPE    = HOST_APPLICATION
   VERSION_STRING = 1.0
 
@@ -19,8 +19,8 @@
   GCC:*_*_*_CC_FLAGS      =  -include openSIL/configs/Onyx_SilCfg.h -Dstatic=
 
 [Sources]
-  DfGetSystemInfoUt.h
-  DfGetSystemInfoUt.c
+  DfHasSmuUt.h
+  DfHasSmuUt.c
   ../../../../../../../../AmdOpenSilPkg/opensil-uefi-interface/OpenSIL/xUSL/DF/Common/BaseFabricTopologyCmn.h
   ../../../../../../../../AmdOpenSilPkg/opensil-uefi-interface/OpenSIL/xUSL/DF/Common/BaseFabricTopologyCmn.c
 

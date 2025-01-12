@@ -117,14 +117,14 @@
       {
         "Name"        : "DfHasFchUt",
         "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\DF\\Common\\DfHasFchUt\\DfHasFchUt.json",
-        "Iterations"  : ["GetCommon2RevXferTablePass"],
+        "Iterations"  : ["FchIsFound", "FchIsNotFound"],
         "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\DF\\Common\\BaseFabricTopologyCmn.c",
         "Timeout"     : 15
       },
       {
-        "Name"        : "DfGetSystemInfoUt",
-        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\DF\\Common\\DfGetSystemInfoUt\\DfGetSystemInfoUt.json",
-        "Iterations"  : ["EmptyComponentLocation", "InvalidComponentType", "NoMatchingComponent", "ValidSmuScenario", "NoTransferTable"],
+        "Name"        : "DfHasSmuUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\DF\\Common\\DfHasSmuUt\\DfHasSmuUt.json",
+        "Iterations"  : ["SmuIsFound", "SmuIsNotFound"],
         "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\DF\\Common\\BaseFabricTopologyCmn.c",
         "Timeout"     : 15
       }

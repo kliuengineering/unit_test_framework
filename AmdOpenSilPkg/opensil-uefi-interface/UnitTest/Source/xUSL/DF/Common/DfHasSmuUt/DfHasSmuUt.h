@@ -1,12 +1,12 @@
 /**
- * @file  DfHasFchUt.h
- * @brief Common declarations of DfHasFchUt functions
+ * @file  DfHasSmuUt.h
+ * @brief Common declarations of DfHasSmuUt functions
  */
 /* Copyright 2023 Advanced Micro Devices, Inc. All rights reserved.    */
 // SPDX-License-Identifier: MIT
 
-#ifndef __DFHASFCHUT_H__
-#define __DFHASFCHUT_H__
+#ifndef __DFHASSMUUT_H__
+#define __DFHASSMUUT_H__
 
 #include <stdlib.h>
 #include <time.h>
@@ -31,43 +31,6 @@
 #include <DF/Common/SilBaseFabricTopologyLib.h>
 
 HOST_DEBUG_SERVICE mHostDebugService = NULL;
-
-// const 
-// AMD_FABRIC_TOPOLOGY_DIE_DEVICE_MAP *
-// DfFindDeviceTypeEntryInMapUt (
-//   FABRIC_DEVICE_TYPE  Type
-//   );
-
-// void 
-// MockDfFindDeviceTypeEntryInMapOnce (
-//   const AMD_FABRIC_TOPOLOGY_DIE_DEVICE_MAP *DeviceMap,
-//   void  *ExpectedReturn
-//   );
-
-// const 
-// AMD_FABRIC_TOPOLOGY_DIE_DEVICE_MAP *
-// DfGetDeviceMapOnDieUt (
-//   void
-//   );
-
-// void 
-// MockDfGetDeviceMapOnDieOnce (
-//   const AMD_FABRIC_TOPOLOGY_DIE_DEVICE_MAP *DeviceMap
-//   );
-
-// const 
-// COMPONENT_LOCATION *
-// DfFindComponentLocationMapUt (
-//   uint32_t *Count, 
-//   uint32_t *PhysIos0FabricId
-//   );
-
-// void 
-// MockDfFindComponentLocationMapOnce (
-//   const COMPONENT_LOCATION *Locations, 
-//   uint32_t Count, 
-//   uint32_t PhysIos0FabricId
-//   );
 
 
 // misc; added here for reference; may not be used

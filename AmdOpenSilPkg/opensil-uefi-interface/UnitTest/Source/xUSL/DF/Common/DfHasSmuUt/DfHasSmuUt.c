@@ -1,13 +1,13 @@
 /* Copyright (C) 2021 - 2024 Advanced Micro Devices, Inc. All rights reserved. */
 // SPDX-License-Identifier: MIT
 /**
- * @file DfHasFchUt.c
- * @brief Unit tests for DfHasFchUt
+ * @file DfHasSmuUt.c
+ * @brief Unit tests for DfHasSmuUt
  *
- * Iterations: FchIsFound, FchIsNotFound
+ * Iterations: SmuIsFound, SmuIsNotFound
  */
 
-#include "DfHasFchUt.h"
+#include "DfHasSmuUt.h"
 
 // parameter used by DfXFindComponentLocationMap
 const uint32_t GenoaPhysIos0FabricId = 0x20;
@@ -138,7 +138,7 @@ TestBody (
   const char* IterationName   = UtGetTestIteration (Ut);
   Ut->Log(AMD_UNIT_TEST_LOG_INFO, __FUNCTION__, __LINE__, "%s (Iteration: %s) Test started.", TestName, IterationName);
 
-  if (strcmp(IterationName, "FchIsFound") == 0) 
+  if (strcmp(IterationName, "SmuIsFound") == 0) 
   {
     // Arrange
     uint32_t Socket = 0, Die = 0, Index = 2; 
@@ -147,12 +147,12 @@ TestBody (
     // Act
     MockSilGetCommon2RevXferTableOnce( (void *)&MockDfXfer, SilPass );
     MockSilGetCommon2RevXferTableOnce( (void *)&MockDfXfer, SilPass );
-    Result = DfHasFch(Socket, Die, Index);
+    Result = DfHasSmu(Socket, Die, Index);
 
     // Assert
     // No assertion is needed due to Result are valid in both T/F forms.
   }
-  else if (strcmp(IterationName, "FchIsNotFound") == 0)
+  else if (strcmp(IterationName, "SmuIsNotFound") == 0)
   {
     // Arrange
     uint32_t Socket = 0, Die = 0xFF, Index = 2; 
@@ -161,7 +161,7 @@ TestBody (
     // Act
     MockSilGetCommon2RevXferTableOnce( (void *)&MockDfXfer, SilPass );
     MockSilGetCommon2RevXferTableOnce( (void *)&MockDfXfer, SilPass );
-    Result = DfHasFch(Socket, Die, Index);
+    Result = DfHasSmu(Socket, Die, Index);
 
     // Assert
     // No assertion is needed due to Result are valid in both T/F forms.

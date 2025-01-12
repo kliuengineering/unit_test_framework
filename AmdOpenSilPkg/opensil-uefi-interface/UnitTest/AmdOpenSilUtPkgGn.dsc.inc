@@ -27,4 +27,4 @@
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/CCX/Common/CcxGetCacWeightsUt/CcxGetCacWeightsUt.inf
 
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfHasFchUt/DfHasFchUt.inf
-  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfGetSystemInfoUt/DfGetSystemInfoUt.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfHasSmuUt/DfHasSmuUt.inf
