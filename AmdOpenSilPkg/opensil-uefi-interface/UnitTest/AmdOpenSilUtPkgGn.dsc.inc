@@ -28,3 +28,5 @@
 
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfHasFchUt/DfHasFchUt.inf
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfHasSmuUt/DfHasSmuUt.inf
+
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/CCX/Zen4/GetZen4DesiredCcdCountUt/GetZen4DesiredCcdCountUt.inf

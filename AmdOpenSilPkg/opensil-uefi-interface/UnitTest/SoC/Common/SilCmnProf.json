@@ -107,6 +107,13 @@
         "Iterations"  : ["GetCacWeightsAborted", "GetCacWeightsPass"],
         "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\CCX\\Common\\CcxMiscInit.c",
         "Timeout"     : 15
+      },
+      {
+        "Name"        : "GetZen4DesiredCcdCountUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\CCX\\Zen4\\GetZen4DesiredCcdCountUt\\GetZen4DesiredCcdCountUt.json",
+        "Iterations"  : ["Case_CCD_MODE_11_CCDS", "Case_CCD_MODE_10_CCDS", "Case_CCD_MODE_9_CCDS", "Case_CCD_MODE_8_CCDS", "Case_CCD_MODE_7_CCDS", "Case_CCD_MODE_6_CCDS", "Case_CCD_MODE_5_CCDS", "Case_CCD_MODE_4_CCDS", "Case_CCD_MODE_3_CCDS", "Case_CCD_MODE_2_CCDS", "TrueCase_CCD_MODE_1_CCD", "FalseCase_CCD_MODE_1_CCD", "Case_Default_True", "Case_Default_False"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\CCX\\Zen4\\Zen4DownCoreInit.c",
+        "Timeout"     : 15
       }
     ]
   },
