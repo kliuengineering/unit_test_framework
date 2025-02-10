@@ -66,7 +66,22 @@
   {
     "Component": "RcMgr",
     "Description": "Profile for xUSL RcMgr components",
-    "Tests" : []
+    "Tests" : [
+      {
+        "Name"        : "SilGetPrimaryRbUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\SilGetPrimaryRbUt\\SilGetPrimaryRbUt.json",
+        "Iterations"  : ["RootBridgeIsFound", "RootBridgeIsNotFound"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\FabricRcInit.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "InitializeRcMgrApiUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\InitializeRcMgrApiUt\\InitializeRcMgrApiUt.json",
+        "Iterations"  : ["Ip2ipApiSuccess"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\FabricRcInit.c",
+        "Timeout"     : 15
+      }
+    ]
   },
   {
     "Component": "MEM",

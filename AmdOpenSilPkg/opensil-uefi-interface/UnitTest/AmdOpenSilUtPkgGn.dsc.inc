@@ -30,3 +30,6 @@
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/DF/Common/DfHasSmuUt/DfHasSmuUt.inf
 
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/CCX/Zen4/GetZen4DesiredCcdCountUt/GetZen4DesiredCcdCountUt.inf
+  
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/SilGetPrimaryRbUt/SilGetPrimaryRbUt.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/InitializeRcMgrApiUt/InitializeRcMgrApiUt.inf
