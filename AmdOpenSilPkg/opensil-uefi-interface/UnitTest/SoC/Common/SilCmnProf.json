@@ -80,7 +80,35 @@
         "Iterations"  : ["Ip2ipApiSuccess"],
         "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\FabricRcInit.c",
         "Timeout"     : 15
-      }
+      },
+      {
+        "Name"        : "DfXRcMgrSetInputBlkUt",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\DfX\\DfXRcMgrSetInputBlkUt\\DfXRcMgrSetInputBlkUt.json",
+        "Iterations"  : ["SilPass"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\DfX\\FabricRcInitDfX.c",
+        "Timeout"     : 15
+      },     
+      {
+        "Name"        : "InitializeResourceManagerDfXTp3Ut",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\DfX\\InitializeResourceManagerDfXTp3Ut\\InitializeResourceManagerDfXTp3Ut.json",
+        "Iterations"  : ["SilPass"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\DfX\\FabricRcInitDfX.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "InitializeResourceManagerDfXTp2Ut",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\DfX\\InitializeResourceManagerDfXTp2Ut\\InitializeResourceManagerDfXTp2Ut.json",
+        "Iterations"  : ["SilPass"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\DfX\\FabricRcInitDfX.c",
+        "Timeout"     : 15
+      },
+      {
+        "Name"        : "InitializeResourceManagerDfXTp1Ut",
+        "ConfigFile"  : "AmdOpenSilPkg\\opensil-uefi-interface\\UnitTest\\Source\\xUSL\\RcMgr\\DfX\\InitializeResourceManagerDfXTp1Ut\\InitializeResourceManagerDfXTp1Ut.json",
+        "Iterations"  : ["SilPassNoBranch"],
+        "Target"      : "AmdOpenSilPkg\\opensil-uefi-interface\\OpenSIL\\xUSL\\RcMgr\\DfX\\FabricRcInitDfX.c",
+        "Timeout"     : 15
+      }  
     ]
   },
   {

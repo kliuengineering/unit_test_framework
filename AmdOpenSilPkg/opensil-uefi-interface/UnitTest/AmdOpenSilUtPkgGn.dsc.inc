@@ -33,3 +33,7 @@
   
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/SilGetPrimaryRbUt/SilGetPrimaryRbUt.inf
   AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/InitializeRcMgrApiUt/InitializeRcMgrApiUt.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/DfX/DfXRcMgrSetInputBlkUt/DfXRcMgrSetInputBlkUt.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/DfX/InitializeResourceManagerDfXTp3Ut/InitializeResourceManagerDfXTp3Ut.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/DfX/InitializeResourceManagerDfXTp2Ut/InitializeResourceManagerDfXTp2Ut.inf
+  AmdOpenSilPkg/opensil-uefi-interface/UnitTest/Source/xUSL/RcMgr/DfX/InitializeResourceManagerDfXTp1Ut/InitializeResourceManagerDfXTp1Ut.inf
